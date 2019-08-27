@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Geometria";
+  font-weight: 400;
+  src: url("../fonts/Geometria.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 700;
+  src: url("../fonts/Geometria-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 800;
+  src: url("../fonts/Geometria-ExtraBold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Geometria";
+  font-weight: 400;
+}
+/*# sourceMappingURL=styles.css.map */
