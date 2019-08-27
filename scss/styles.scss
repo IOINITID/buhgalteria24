@@ -20,3 +20,11 @@ body {
   font-family: "Geometria";
   font-weight: 400;
 }
+
+.header-background {
+  background-image: url("../img/header-background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 945px;
+}
