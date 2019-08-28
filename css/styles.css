@@ -397,4 +397,59 @@ body {
   background-color: #71b136;
   border: none;
 }
+
+.perfect-outsourcing-background {
+  background-color: #deeceb;
+}
+
+.perfect-outsourcing {
+  padding-top: 122px;
+  padding-bottom: 33px;
+}
+
+.perfect-outsourcing h2 {
+  color: #0c1702;
+  font-family: "Geometria", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 101px;
+}
+
+.perfect-outsourcing-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 116px;
+}
+
+.perfect-outsourcing-item img {
+  margin-bottom: 21px;
+}
+
+.perfect-outsourcing-item h3 {
+  color: #0c1702;
+  font-family: "Geometria", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.perfect-outsourcing-item p {
+  color: #0c1702;
+  font-family: "Geometria", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  width: 230px;
+}
 /*# sourceMappingURL=styles.css.map */
