@@ -748,18 +748,22 @@ body {
   }
 }
 
-
-
-
 .slick-prev {
   background-image: url("../img/arow-left-icon.svg");
   width: 60px;
   height: 60px;
   z-index: 1;
-}
 
-.slick-prev::before {
-  content: "";
+  &:hover,
+  &:focus {
+    color: transparent;
+    outline: none;
+    background: url("../img/arow-left-icon.svg");
+  }
+
+  &::before {
+    content: "";
+  }
 }
 
 .slick-next {
@@ -767,54 +771,285 @@ body {
   width: 60px;
   height: 60px;
   z-index: 1;
-}
 
-.slick-next::before {
-  content: "";
-}
+  &:hover,
+  &:focus {
+    color: transparent;
+    outline: none;
+    background: url("../img/arrow-right-icon.svg");
+  }
 
-.slick-prev:hover,
-.slick-prev:focus {
-  color: transparent;
-  outline: none;
-  background: url("../img/arow-left-icon.svg");
-}
-
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: url("../img/arrow-right-icon.svg");
+  &::before {
+    content: "";
+  }
 }
 
 .slick-dots {
   bottom: -172px;
+
+  li {
+    margin-right: 18px;
+
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: #004e49;
+      border-radius: 50%;
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        top: 6px;
+        color: transparent;
+      }
+    }
+  }
 }
 
-.slick-dots li button {
-  width: 30px;
-  height: 30px;
-  background-color: #004e49;
-  border-radius: 50%;
+.slick-dots {
+  li.slick-active {
+    button {
+      &::before {
+        opacity: 1;
+        color: #ffffff;
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-.slick-dots li {
-  margin-right: 18px;
+.why-choose-us-background-inner {
+  background-color: #ccdbda;
+  padding: 0;
 }
 
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #ffffff;
-  font-size: 20px;
+.why-choose-us-background {
+  border-radius: 0 300px 0 0;
+  background-color: #deeceb;
 }
 
+.why-choose-us {
+  padding-top: 129px;
+  padding-bottom: 0;
 
-.slick-dots li button:before {
-  width: 30px;
-  height: 30px;
-  top: 6px;
+  h2 {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 144px;
+  }
 }
 
-.slick-dots li button:before {
-  color: transparent;
+.why-choose-us-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 116px;
+
+  img {
+    margin-bottom: 21px;
+  }
+
+  h3 {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 230px;
+  }
+}
+
+.additional-services {
+  padding-top: 106px;
+  padding-bottom: 106px;
+
+  h2 {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  p {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+
+    &:nth-of-type(2) {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+.additional-services-row {
+  justify-content: center;
+}
+
+.additional-services-item {
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  margin-top: 135px;
+  margin-bottom: 35px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  img {
+    margin-bottom: 21px;
+  }
+
+  h3 {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 236px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 236px;
+  }
+}
+
+.footer-background {
+  background-color: #006861;
+}
+
+.footer {
+  padding-top: 63px;
+  padding-bottom: 51px;
+}
+
+.footer-item {
+  span {
+    color: #ffffff;
+    font-family: "Geometria", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    // line-height: 36px;
+    display: inline-block;
+    margin-bottom: 52px;
+  }
+
+  address {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: #ffffff;
+      font-family: "Geometria", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      // line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #ffffff;
+      font-family: "Geometria", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      // line-height: 36px;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      &:nth-of-type(1) {
+        &::before {
+          content: "";
+          background-image: url("../img/header-telephone-icon-inactive.svg");
+          background-repeat: no-repeat;
+          width: 17px;
+          height: 17px;
+          display: inline-block;
+          order: 1;
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+
+        &::after {
+          content: "";
+          background-image: url("../img/header-telephone-icon-active.svg");
+          background-repeat: no-repeat;
+          width: 17px;
+          height: 17px;
+          display: inline-block;
+          order: 2;
+        }
+      }
+
+      &:nth-of-type(2) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  a {
+    &:first-child {
+      color: #ffffff;
+      font-family: "Geometria", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      width: 288px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: #71b136;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 52px;
+    }
+
+    &:last-child {
+      color: #ffffff;
+      font-family: "Geometria", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    color: #ffffff;
+    font-family: "Geometria", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
