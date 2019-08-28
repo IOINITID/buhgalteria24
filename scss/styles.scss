@@ -396,6 +396,7 @@ body {
 
 .perfect-outsourcing-background {
   background-color: #deeceb;
+  padding: 0;
 }
 
 .perfect-outsourcing {
@@ -441,4 +442,201 @@ body {
     text-align: center;
     width: 230px;
   }
+}
+
+.perfect-bookkeeping-background {
+  background-image: url("../img/perfect-bookkeeping-image.png");
+  height: 599px;
+  padding-top: 89px;
+  padding-bottom: 105px;
+}
+
+.perfect-bookkeeping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: #0c1702;
+    font-family: "Geometria", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    width: 510px;
+    margin: 0 auto;
+    margin-bottom: 81px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      &:nth-of-type(1) {
+        margin-bottom: 32px;
+      }
+
+      &:nth-of-type(2) {
+        margin-bottom: 72px;
+      }
+
+      input {
+        color: #9ba097;
+        font-family: "Geometria", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        // line-height: 36px;
+        text-align: center;
+        width: 288px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid #bec8b6;
+        background-color: #ffffff;
+        border: none;
+        padding: 0 20px;
+      }
+    }
+
+    button {
+      color: #ffffff;
+      font-family: "Geometria", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      width: 288px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: #71b136;
+      border: none;
+    }
+  }
+}
+
+.how-it-works-background {
+  height: 825px;
+  background-color: #006861;
+}
+
+.how-it-works-item {
+  padding-top: 108px;
+  padding-bottom: 131px;
+
+  img {
+    display: block;
+    margin-left: auto;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: "Geometria", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 142px;
+  }
+
+  h3 {
+    color: #ffffff;
+    font-family: "Geometria", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+
+    color: #ffffff;
+    font-family: "Geometria", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    width: 515px;
+  }
+}
+
+.how-it-works-image {
+  padding-right: 30px;
+}
+
+.how-it-works-text {
+  align-self: center;
+  padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.slick-prev {
+  background-image: url("../img/arow-left-icon.svg");
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.slick-prev::before {
+  content: "";
+}
+
+.slick-next {
+  background-image: url("../img/arrow-right-icon.svg");
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.slick-next::before {
+  content: "";
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  color: transparent;
+  outline: none;
+  background: url("../img/arow-left-icon.svg");
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: url("../img/arrow-right-icon.svg");
+}
+
+.slick-dots {
+  bottom: -172px;
+}
+
+.slick-dots li button {
+  width: 30px;
+  height: 30px;
+  background-color: #004e49;
+  border-radius: 50%;
+}
+
+.slick-dots li {
+  margin-right: 18px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.slick-dots li button:before {
+  width: 30px;
+  height: 30px;
+  top: 6px;
+}
+
+.slick-dots li button:before {
+  color: transparent;
 }
