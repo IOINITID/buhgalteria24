@@ -29,13 +29,30 @@ $('.first-slider').slick({
   arrows: true,
   dots: true,
   responsive: [{
-    breakpoint: 576,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      dots: false
+      breakpoint: 577,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 993,
+      settings: {
+        arrows: true,
+        slidesToShow: 1,
+        dots: false
+      }
     }
-  }]
+  ]
 });
 // Slider two
 $('.second-slider').slick({
@@ -46,13 +63,22 @@ $('.second-slider').slick({
   arrows: true,
   dots: false,
   responsive: [{
-    breakpoint: 576,
-    settings: {
-      arrows: false,
-      slidesToShow: 1,
-      dots: false
+      breakpoint: 576,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        dots: false
+      }
     }
-  }]
+  ]
 });
 // Mobile menu
 $('.btn_mobile').on('click', function () {
